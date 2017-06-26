@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>index page</title>
+    <style>
+        .jumbotron {
+            background: scroll;
+        }
+
+        span {
+            font-size: 20px;
+            color: darkkhaki;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron"><h1>Sign up</h1></div>
+    <div class="form-horizontal">
+        <div style="text-align: right" class="jumbotron">
+            <h4><span>注册</span></h4>
+        </div>
+        <form action="">
+            <div class="form-group">
+                <label class="control-label col-lg-2" for="username">username</label>
+                <div class="col-lg-10">
+                    <input id="username" class="form-control" type="text" placeholder="name">
+                </div>
+            </div>
+            </form>
+                    <div class="form-group">
+                <label class="control-label col-lg-2" for="password">password</label>
+                <div class="col-lg-10">
+                    <input id="password" class="form-control" type="password" placeholder="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2" for="info">Introduce</label>
+                <div class="col-lg-10">
+                    <textarea class="form-control" name="" id="info" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2" for="city">City</label>
+                <div class="col-lg-10">
+                    <select class="form-control" name="" id="city">
+                        <option value="">Beijing</option>
+                        <option value="">Shanghai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2">Hobbies</label>
+                <div class="col-lg-10">
+                    <label class="checkbox-inline"><input type="checkbox" disabled> TV</label>
+                    <label class="checkbox-inline"><input type="checkbox"> Game</label>
+                    <label class="checkbox-inline"><input type="checkbox"> Movie</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-lg-2">Gender</label>
+                <div class="col-lg-10">
+                    <label class="radio-inline"><input type="radio" name="gender">Male</label>
+                    <label class="radio-inline"><input type="radio" name="gender">Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Avatar</label>
+                <div class="col-lg-10">
+                    <label class="btn btn-default">File
+                    <input type="file" style="display: none">
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <div class="checkbox">
+                        <label for="rm"><input id="rm" type="checkbox">Rememberme</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button class="btn btn-primary">signup</button>
+                </div>
+            </div>
+        </form>
+
+        <form action="">
+            <div class="input-group has-success">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input class="form-control" type="text">
+                <div class="input-group-btn">
+                    <button class="btn btn-danger">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password1" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Focused</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="focusedInput" type="text" value="Click to focus">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Disabled</label>
+                <div class="col-sm-10">
+                    <input class="form-control" id="disabledInput" type="text" disabled>
+                </div>
+            </div>
+            <fieldset disabled>
+                <div class="form-group">
+                    <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset disabled</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="disabledTextInput" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <select id="disabledSelect" class="form-control">
+                            <option>Disabled select</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group has-success has-feedback">
+                <label class="col-sm-2 control-label" for="inputSuccess">
+                    success </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputSuccess">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-warning has-feedback">
+                <label class="col-sm-2 control-label" for="inputWarning">
+                    warning </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputWarning">
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group has-error has-feedback">
+                <label class="col-sm-2 control-label" for="inputError">
+                    error </label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputError">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
